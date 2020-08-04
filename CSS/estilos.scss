@@ -1,0 +1,23 @@
+body{
+    width: 1366px;
+    background-color: #1e3253;
+    margin: 0;
+    padding: 0;
+}
+
+#game-board{
+    height: 700px;
+    background-size: auto;
+}
+
+#frame{
+    figure{
+        position: relative;
+        z-index: 0;
+        margin: 0 auto;
+        width: 600px;
+        img{
+            width: 100%;
+        }
+    }
+}
