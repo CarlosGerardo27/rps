@@ -62,4 +62,88 @@ body {
   width: 100%;
 }
 
+#scissors-container {
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+  top: -400px;
+  text-align: center;
+}
+#scissors-container #scissors {
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  border: 15px solid #eba726;
+  border-radius: 360px;
+  padding: 25px;
+}
+
+#spock-container {
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+  top: -390px;
+  left: -185px;
+  text-align: center;
+}
+#spock-container #spock {
+  width: 50px;
+  height: 50px;
+  padding: 25px;
+  background-color: white;
+  border: 15px solid #42bbcc;
+  border-radius: 360px;
+}
+
+#paper-container {
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+  top: -520px;
+  right: -185px;
+  text-align: center;
+}
+#paper-container #paper {
+  width: 50px;
+  height: 50px;
+  padding: 25px;
+  background-color: white;
+  border: 15px solid #4f6af5;
+  border-radius: 360px;
+}
+
+#rock-container {
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+  top: -480px;
+  right: -100px;
+  text-align: center;
+}
+#rock-container #rock {
+  width: 50px;
+  height: 50px;
+  padding: 25px;
+  background-color: white;
+  border: 15px solid #d92e4e;
+  border-radius: 360px;
+}
+
+#lizard-container {
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+  top: -615px;
+  left: -100px;
+  text-align: center;
+}
+#lizard-container #lizard {
+  width: 50px;
+  height: 50px;
+  padding: 25px;
+  background-color: white;
+  border: 15px solid #8655e5;
+  border-radius: 360px;
+}
+
 /*# sourceMappingURL=styles.css.map */
