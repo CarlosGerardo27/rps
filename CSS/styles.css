@@ -2,6 +2,12 @@ body {
   width: 1366px;
   margin: 0;
   padding: 0;
+  background: #1d3454;
+  background: radial-gradient(circle, #1d3454 0%, #182343 55%, #1d3454 100%);
+}
+
+.hide {
+  display: none;
 }
 
 .wrapper {
@@ -12,6 +18,24 @@ body {
   padding-top: 20px;
 }
 
+.opacity {
+  background-color: black;
+  opacity: 0.6;
+  position: absolute;
+  z-index: 4;
+  width: 130%;
+  height: 130%;
+  animation: blink 200ms linear;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.6;
+  }
+}
 .header {
   display: flex;
   justify-content: space-between;
@@ -20,6 +44,7 @@ body {
   border-radius: 12px;
   color: #feffff;
   font-family: "Barlow Semi Condensed", sans-serif;
+  text-transform: uppercase;
   margin: 0 auto;
   padding: 10px 15px 10px 15px;
   margin-bottom: 6rem;
@@ -54,10 +79,66 @@ body {
   font-family: "Barlow Semi Condensed", sans-serif;
 }
 
+#the-rules {
+  background-color: white;
+  padding: 15px;
+  padding-top: 5px;
+  padding-left: 30px;
+  padding-bottom: 40px;
+  border-radius: 10px;
+  width: 350px;
+  position: absolute;
+  z-index: 5;
+  left: 450px;
+  top: 160px;
+  justify-content: center;
+  animation: blink2 300ms linear;
+}
+@keyframes blink2 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+#the-rules img {
+  margin: 0 auto;
+}
+#the-rules div {
+  display: flex;
+  width: 100%;
+}
+#the-rules div div {
+  width: 5%;
+  padding: 35px;
+  position: relative;
+  top: -15px;
+  right: -20px;
+}
+#the-rules div div img {
+  cursor: pointer;
+}
+#the-rules div p {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-size: 29px;
+  color: #404761;
+  font-weight: bold;
+  width: 90%;
+}
+
+#close:hover {
+  box-shadow: 1px 1px 3px #cccccc;
+  padding: 5px;
+  scale: 1.6;
+  border-radius: 5px;
+}
+
 #game-board {
   height: 380px;
   background-size: auto;
-  margin: -30px;
+  position: relative;
+  z-index: 2;
 }
 
 #frame figure {
@@ -85,6 +166,7 @@ body {
   border: 15px solid #eba726;
   border-radius: 360px;
   padding: 25px;
+  cursor: pointer;
 }
 
 #spock-container {
@@ -102,6 +184,7 @@ body {
   background-color: white;
   border: 15px solid #42bbcc;
   border-radius: 360px;
+  cursor: pointer;
 }
 
 #paper-container {
@@ -119,6 +202,7 @@ body {
   background-color: white;
   border: 15px solid #4f6af5;
   border-radius: 360px;
+  cursor: pointer;
 }
 
 #rock-container {
@@ -136,11 +220,13 @@ body {
   background-color: white;
   border: 15px solid #d92e4e;
   border-radius: 360px;
+  cursor: pointer;
 }
 
 #lizard-container {
   margin: 0 auto;
   position: relative;
+  width: 130px !important;
   z-index: 1;
   top: -615px;
   left: -100px;
@@ -153,12 +239,26 @@ body {
   background-color: white;
   border: 15px solid #8655e5;
   border-radius: 360px;
+  cursor: pointer;
 }
 
 #rules-container {
   display: flex;
   width: 90%;
   justify-content: flex-end;
+  position: relative;
+  z-index: 3;
+  top: -70px;
+  transition: all 300ms;
+}
+#rules-container :hover {
+  box-shadow: 0px 1px 3px #cccccc;
+  scale: 1.1;
+  background-color: #4f6af5;
+}
+#rules-container :active {
+  background-color: #3555f3;
+  box-shadow: 0px 1px 3px #404761 inset;
 }
 
 #rules {
@@ -171,6 +271,18 @@ body {
   font-size: 18px;
   letter-spacing: 2px;
   border-radius: 10px;
+  cursor: pointer;
+}
+
+.player-option {
+  overflow: visible !important;
+}
+.player-option :hover {
+  scale: 1.1;
+  height: 100%;
+}
+.player-option :active {
+  box-shadow: 0px 3px 5px rgba(255, 255, 255, 0.596);
 }
 
 /*# sourceMappingURL=styles.css.map */
