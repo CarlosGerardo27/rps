@@ -9,6 +9,8 @@ $(document).ready(function(){
     var spock = $("#spock")
     var lizard = $("#lizard")
     var playerOpt = $(".player-option")
+    var step2 = $("#step2")
+    var step1 = $("#frame")
 
 close.click(function(){
         opacity.addClass("hide")
@@ -23,6 +25,11 @@ rulesButton.click(function(){
 opacity.click(function(){
     opacity.addClass("hide")
     darules.addClass("hide")
+})
+
+playerOpt.click(function(){
+    step1.addClass("hide")
+    step2.removeClass("hide")   
 })
 
 
