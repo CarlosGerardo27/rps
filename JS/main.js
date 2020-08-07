@@ -53,12 +53,36 @@ window.addEventListener("load",function(){
     var pickLizard= document.getElementById("pick-lizard")
     
     
-    
+    /* Instrucciones para el step2
+    cuando se hace click en algun icono, se remueve la clase hide
+    en la segunda pantalla del elemento clikeado en el step1 */
     
     p1Scissors.addEventListener("click",function(){
         console.log("You picked Scissors")
         pickScissors.classList.remove("hide")
     })
-    
-    
+
+    p1Paper.addEventListener("click",function(){
+        console.log("You picked Paper")
+        pickPaper.classList.remove("hide")
     })
+
+    p1Rock.addEventListener("click",function(){
+        console.log("You picked Rock")
+        pickRock.classList.remove("hide")
+    })
+
+    p1Lizard.addEventListener("click",function(){
+        console.log("You picked Lizard")
+        pickLizard.classList.remove("hide")
+    })
+    p1Spock.addEventListener("click",function(){
+        console.log("You picked Spock")
+        pickSpock.classList.remove("hide")
+    })
+    
+    /*  */
+
+    })
+
+
